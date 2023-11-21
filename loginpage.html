@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<title>Login page</title>
+<style>
+body{
+font-family:Arial,sans-serif;
+background-image:url("loginimage.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+color:white;
+font-size:23px;
+}
+label{
+color:white;
+font-size:18px;
+
+}
+.butn{
+background-color:blue;
+text-align:center;
+padding:10px 20px;
+color:white;
+display:inline-block;
+font-size:16px;
+margin:20px 2px;
+border-radius:10px;
+border-color:white;
+}
+</style>
+</head>
+<body>
+<center>
+<h2><b>LOGIN</b></h2>
+<form action="submitloginform" method="post">
+
+<label for="username" ><b>Username:</b></label>
+<input type="text" id="username" name="username" placeholder="Enter username" required><br>
+<label for="pwd" ><b>Password:</b></label>
+<input type="Password" id="pwd" name="pwd" placeholder="Enter Password" required><br>
+<button class= "butn" type="submit" name="login"><b>Login</b></button>
+</form>
+
+</center>
+</body>
+</html>

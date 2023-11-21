@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <style>
+        body {
+            font-family: sans-serif, Arial;
+            background-color: white;
+			background-image:url("loginimage.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            margin: 0; /* Remove default margin */
+        }
+
+        .but_con {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .but {
+            background-color: green;
+            text-align: center;
+            padding: 10px 20px;
+            color: white;
+            font-size: 16px;
+            border-radius: 10px;
+            border-color: white;
+            cursor: pointer;
+        }
+
+        .tbb {
+            display: flex;
+            justify-content: center;
+            align-items: bottom;
+            height: 30vh;
+            width: 50%; /* Adjusted width */
+            margin: 0 auto;
+        }
+
+        table {
+            background-color: lightseagreen;
+            border-collapse: collapse;
+            width: 100%;
+            max-width: none;
+        }
+
+        th, td {
+            width: 40%;
+            text-align: left;
+            padding: 10px;
+        }
+
+        img {
+            max-width: 20%;
+            height: 20%;
+        }
+
+        td:nth-child(2), th:nth-child(2) {
+            width: 80%;
+        }
+
+        #buyButton {
+            background-color: blue;
+            color: white;
+            padding: 10px 10px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 270px; 
+			border: 2px solid white; 
+        }
+    </style>
+</head>
+<body>
+<div class="but_con">
+    <button class="but" onclick="location.href='userprofile.html'">Profile</button>
+    <button class="but" onclick="location.href='logout.html'">Logout</button>
+</div>
+
+<center>
+    <h1>Catalogue</h1>
+</center>
+
+<div class="tbb">
+    <table>
+        <thead>
+        <tr>
+            <th>Book Preview</th>
+            <th>Book Details</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><img src="book1.jpg" alt="bookimage"></td>
+            <td>Introduction to Java Programming, K.Somasundaram, BPB Publications</td>
+            <td>$40</td>
+        </tr>
+        <tr>
+            <td><img src="book2.jpg" alt="bookimage"></td>
+            <td>Computer Networks, Andrew S.Tanenbaum</td>
+            <td>$35</td>
+        </tr>
+        <tr>
+            <td><img src="book3.jpg" alt="bookimage"></td>
+            <td>C++ Programming Language, Rajaramam, PHI Learning</td>
+            <td>$50</td>
+        </tr>
+        <tr>
+            <td><img src="book4.jpg" alt="bookimage"></td>
+            <td>Operating System Principles, S.Sridhar, Oxford</td>
+            <td>$30</td>
+        </tr>
+        <tr>
+            <td><img src="book5.jpg" alt="bookimage"></td>
+            <td>Database Management System, E.Ramez and Navathe, Pearson</td>
+            <td>$65</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<center>
+    <a href="shop.html"><button id="buyButton" onclick="alert('Clicked to Buy!')">Click to Buy</button>
+</center>
+
+</body>
+</html>

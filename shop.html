@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<title>Shoppingcart form</title>
+<style>
+body{
+font-family:Arial,sans-serif;
+background-image:url("loginimage.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+color:white;
+font-size:23px;
+}
+
+label{
+  color: white;
+  font-size: 18px;
+ 
+}
+.butn {
+      background-color: blue;
+      text-align: center;
+      padding: 15px 30px; /* Increased padding for a wider button */
+      color: white;
+      display: inline-block;
+      font-size: 16px;
+      margin: 20px 2px;
+      border-radius: 10px;
+      border: white; 
+      cursor: pointer;
+	   border: 2px solid white; 
+    }
+	select {
+      width: 25%; /* Make the dropdown full-width */
+      padding: 7px; /* Added padding for better appearance */
+      margin: 10px 0;
+      box-sizing: border-box;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background-color: lightblue;
+      color: #333;
+      font-size: 16px;
+      
+    }
+
+
+
+</style>
+</head>
+<body>
+<center>
+<h2>Shopping Cart<h2>
+<form action="submitpaymentform" method="post">
+  <label for="book">Select a book</label>
+  <select id="book" name="book">
+    <option value="book1">Introduction to Java Programming</option>
+    <option value="book2">Computer Networks</option>
+    <option value="book3">C++ Programming Language</option>
+	<option value="book3">Operating System Principles</option>
+    <option value="book3">Database Management System</option>
+  </select><br>
+   <label for="quantity">Quantity</label>
+  <select id="quantity" name="quantity">
+    <option value="1"> 1</option>
+    <option value="2"> 2</option>
+    <option value="3"> 3</option>
+    
+  </select>
+  <br><br>
+  <input type="submit" class="butn" value="Submit" onclick="return redirectToPayment()">
+</form>
+
+</center>
+
+<script>
+  function redirectToPayment() {
+   
+    window.location.href = "payment.html";
+    return false; 
+  }
+</script>
+</body>
+</html>
